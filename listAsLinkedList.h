@@ -1,7 +1,7 @@
 /** 
  * ===========================================================
- * Name: 
- * Section: 
+ * Name: Benjamin Tat
+ * Section: T6
  * Project: Implementation of Linked List Library
  * Purpose: List ADT as linked list
  * ===========================================================

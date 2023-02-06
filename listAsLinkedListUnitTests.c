@@ -1,11 +1,15 @@
 /** 
  * ===========================================================
- * Name: 
- * Section: 
- * Project: 
+ * Name: Benjamin Tat
+ * Section: T6
+ * Project: Implementation of Linked List Library
  * Purpose: List ADT as linked list
  * ===========================================================
  */
+#include <assert.h>
+#include <stdio.h>
+
+#include "listAsLinkedList.h"
 
 int main() {
 
@@ -15,6 +19,19 @@ int main() {
 
     // You are not being judged/graded on the quality of your lab
     // However, it is in your best interest to make a high quality ADT for future assignments . . . hint hint
+
+    LinkedList *LinkedList = createLinkedList();
+    printf("%p\n", LinkedList);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 0);
+
+    insertElementLinkedList(LinkedList, 0, 13);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 1);
+
+    insertElementLinkedList(LinkedList, 0, 2);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 2);
 
     return 0;
 }
