@@ -24,14 +24,73 @@ int main() {
     printf("%p\n", LinkedList);
     printLinkedList(LinkedList);
     assert(lengthOfLinkedList(LinkedList) == 0);
-
-    insertElementLinkedList(LinkedList, 0, 13);
+    
+    insertElementLinkedList(LinkedList, 0, 5);
     printLinkedList(LinkedList);
     assert(lengthOfLinkedList(LinkedList) == 1);
 
-    insertElementLinkedList(LinkedList, 0, 2);
+    insertElementLinkedList(LinkedList, 0, 9);
     printLinkedList(LinkedList);
     assert(lengthOfLinkedList(LinkedList) == 2);
+
+    insertElementLinkedList(LinkedList, 0, 59);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 3);
+
+    insertElementLinkedList(LinkedList, lengthOfLinkedList(LinkedList)-1, 69);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 4);
+
+    insertElementLinkedList(LinkedList, 1, 24);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 5);
+
+    appendElementLinkedList(LinkedList, 25);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 6);
+
+    deleteElementLinkedList(LinkedList, 0);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 5);
+
+    deleteElementLinkedList(LinkedList, 0);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 4);
+
+    deleteElementLinkedList(LinkedList, 3);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 3);
+
+    deleteElementLinkedList(LinkedList, 1);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 2);
+
+    deleteElementLinkedList(LinkedList, 1);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 1);
+
+    deleteElementLinkedList(LinkedList, 1);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 0);
+
+    insertElementLinkedList(LinkedList, 0, 5);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 1);
+
+    insertElementLinkedList(LinkedList, 0, 9);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 2);
+
+    insertElementLinkedList(LinkedList, 0, 59);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 3);
+
+    insertElementLinkedList(LinkedList, lengthOfLinkedList(LinkedList)-1, 69);
+    printLinkedList(LinkedList);
+    assert(lengthOfLinkedList(LinkedList) == 4);
+
+    int nodeValue = getElementLinkedList(LinkedList, 1);
+    assert(nodeValue == 59);
 
     return 0;
 }
